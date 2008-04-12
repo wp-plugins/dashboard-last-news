@@ -1,0 +1,143 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: dashboard-last-news\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2008-04-12 18:19+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: dashboard-last-news.php:36
+#: dashboard-last-news.php:40
+#: dashboard-last-news.php:38
+#: dashboard-last-news.php:54
+#: dashboard-last-news.php:57
+#: dashboard-last-news.php:63
+#: dashboard-last-news.php:66
+#: dashboard-last-news.php:33
+#: dashboard-last-news.php:338
+#: dashboard-last-news.php:345
+#: dashboard-last-news.php:355
+#: dashboard-last-news.php:362
+msgid "Last News"
+msgstr "Dernières Nouvelles"
+
+#: dashboard-last-news.php:87
+#: dashboard-last-news.php:125
+#: dashboard-last-news.php:130
+#: dashboard-last-news.php:132
+#: dashboard-last-news.php:498
+#, php-format
+msgid "You need to add this <a href='%s'>SimplePie plugin</a> to use this widget"
+msgstr "Vous avez besoin de l'extension suivante <a href='%s'>SimplePie plugin</a> pour utiliser ce widget"
+
+#: dashboard-last-news.php:145
+#: dashboard-last-news.php:150
+#: dashboard-last-news.php:189
+#: dashboard-last-news.php:194
+#: dashboard-last-news.php:199
+#: dashboard-last-news.php:195
+#: dashboard-last-news.php:200
+#: dashboard-last-news.php:179
+#: dashboard-last-news.php:184
+msgid "Sorry! no news !"
+msgstr "Désolé ! aucune info !"
+
+#: dashboard-last-news.php:249
+#: dashboard-last-news.php:287
+msgid "How many feeds would you like to display?"
+msgstr "Combien de flux voulez vous saisir?"
+
+#: dashboard-last-news.php:259
+#: dashboard-last-news.php:297
+msgid "How many lines would you like to display?"
+msgstr "Combien de lignes à afficher ?"
+
+#: dashboard-last-news.php:274
+#: dashboard-last-news.php:286
+#: dashboard-last-news.php:312
+#: dashboard-last-news.php:324
+#: dashboard-last-news.php:331
+#: dashboard-last-news.php:343
+#: dashboard-last-news.php:336
+#: dashboard-last-news.php:348
+#: dashboard-last-news.php:594
+#: dashboard-last-news.php:606
+msgid "Fill the RSS or Atom URL here"
+msgstr "Indiquer le flux RSS ou Atom ici"
+
+#: setform.php:8
+msgid "How many Last News dashboard widget do you want ?"
+msgstr "Combien de widget tableau de bord Dernières Nouvelles voulez-vous ?"
+
+#: setform.php:22
+msgid "Update"
+msgstr "Enregistrer"
+
+#: settings.php:7
+msgid "Settings updated successfully for the current user !"
+msgstr "Réglages actualisés"
+
+#: settings.php:9
+msgid "Settings NOT updated !!"
+msgstr "ATTENTION !  PAS de mise à jour effectuée !!"
+
+#: settings.php:18
+msgid "Dashboard Last News"
+msgstr "Tableau de Bord Dernières Nouvelles"
+
+#: settings.php:7
+msgid "Settings updated successfully !"
+msgstr "Réglages actualisés"
+
+#: setform.php:8
+msgid "How many Last News dashboard widgets do you want ?"
+msgstr "Combien de widgets tableau de bord Dernières Nouvelles voulez-vous ?"
+
+#: dashboard-last-news.php:301
+#: dashboard-last-news.php:305
+#: dashboard-last-news.php:563
+msgid "Widget Title : "
+msgstr "Titre du widget"
+
+#: dashboard-last-news.php:306
+msgid "How many feeds would you like to display ?"
+msgstr "Combien de flux voulez vous saisir ?"
+
+#: dashboard-last-news.php:316
+msgid "How many lines would you like to display ?"
+msgstr "Combien de lignes à afficher ? "
+
+#: dashboard-last-news.php:311
+#: dashboard-last-news.php:569
+msgid "Image (y/n) : "
+msgstr "Image (o/n) : "
+
+#: dashboard-last-news.php:313
+#: dashboard-last-news.php:571
+msgid "Feeds fields ?"
+msgstr "Champs ?"
+
+#: dashboard-last-news.php:320
+#: dashboard-last-news.php:578
+msgid "Lines to display ?"
+msgstr "Lignes ?"
+
+#: dashboard-last-news.php:107
+msgid "Sorry ! but there is no cache folder as expected !<br/>Check the installation guidelines of this plugin."
+msgstr "Désolé ! il n&#39;y a pas de répertoire &#39;cache&#39; à &#39;endroit attendu ! <br/> Reporter vous aux consignes d&#39;installation de ce plugin, merci."
+
+#: dashboard-last-news.php:457
+msgid "Loading&#8230;"
+msgstr "Chargement&#8230;"
+
+#: dashboard-last-news.php:462
+msgid "No feed requested, you should edit the control panel&#8230;"
+msgstr "Aucun flux demandé, vous devriez modifier le panneau de controle (Modifier)&#8230;"
+
+#: dashboard-last-news.php:466
+msgid "First time ! welcome ! you have to edit the control panel&#8230;"
+msgstr "Bienvenue ! il faut modifier le panneau de controle (Modifier) &#8230;"
+

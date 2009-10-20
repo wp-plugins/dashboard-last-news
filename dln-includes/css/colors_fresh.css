@@ -1,0 +1,7 @@
+.ui-slider-handle {
+	background:url(../images/bout.png) no-repeat;
+}
+
+.ui-slider,.ui-slider-1 {
+	background:url(../images/fond.png);
+}

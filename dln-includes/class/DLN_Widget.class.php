@@ -57,7 +57,7 @@ class DLN_Widget
 	<p style='margin-bottom:3px;'>
 		<label for="<?php echo $this->id; ?>_image"><?php _e('Image (y/n) : ', 'dashboard-last-news' ); ?>&nbsp;<input type="checkbox" <?php checked(true,$this->options['image']); ?> name="<?php echo $this->id; ?>[image]" id="<?php echo $this->id; ?>_image" /></label>
 		&nbsp;&nbsp;&nbsp;<?php _e('Feeds fields ?', 'dashboard-last-news' ); ?>&nbsp;<select name="<?php echo $this->id; ?>[maxfeeds]"><?php for ( $i = 3; $i <= 10; $i++ ) echo "<option value='$i'" . ( $this->options['maxfeeds'] == $i ? " selected='selected'" : '' ) . ">$i</option>";?></select>
-		&nbsp;&nbsp;&nbsp;<?php _e('Lines to display ?', 'dashboard-last-news' ); ?>&nbsp;<select name="<?php echo $this->id; ?>[maxlines]"><?php for ( $i = 3; $i <= 40; $i++ ) echo "<option value='$i'" . ( $this->options['maxlines'] == $i ? " selected='selected'" : '' ) . ">$i</option>"; ?></select>
+		&nbsp;&nbsp;&nbsp;<?php _e('Lines to display ?', 'dashboard-last-news' ); ?>&nbsp;<select name="<?php echo $this->id; ?>[maxlines]"><?php for ( $i = 3; $i <= 99; $i++ ) echo "<option value='$i'" . ( $this->options['maxlines'] == $i ? " selected='selected'" : '' ) . ">$i</option>"; ?></select>
 	</p>
 <?php
 		$z = 1;
@@ -114,9 +114,10 @@ class DLN_Widget
 		require_once  (ABSPATH . WPINC . '/class-feed.php');
 
 		$feed = new SimplePie();
-		$feed->set_cache_class('WP_Feed_Cache');
-		$feed->set_cache_duration(apply_filters('wp_feed_cache_transient_lifetime', 43200));
 		$feed->set_feed_url($this->options['feeds']);
+		$feed->set_cache_class('WP_Feed_Cache');
+		$feed->set_file_class('WP_SimplePie_File');
+		$feed->set_cache_duration(apply_filters('wp_feed_cache_transient_lifetime', 43200));
 		$feed->init();
 		$feed->handle_content_type();
 		if ($feed->get_items())
@@ -211,7 +212,7 @@ class DLN_Widget
 		$hmin = 10; $hmax = 150;
 		$wh = false;
 
-		$wh = @ getimagesize($url);
+		$wh = @getimagesize($url);
 		if ( ($wh [1] < $hmin) || ($wh [1] > $hmax) )
 			return  '';
 		return  "<img src='$url' class='lastnews' />";
